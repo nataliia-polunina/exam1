@@ -3,6 +3,13 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+@mixin position-center() {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%); 
 }	
 
 @mixin link-decoration() {
@@ -10,3 +17,20 @@
 	text-transform: uppercase;
 	color: #fff;
 }
+
+@mixin hover-effect() {
+	&:hover,
+	&:focus,
+	&:active {
+		background-color: #073f8b;
+	}	
+}
+
+@mixin hover-link() {
+	&:hover,
+	&:focus,
+	&:active {
+		border-bottom: 2px solid #fff;
+	}
+}
+
